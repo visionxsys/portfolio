@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Forme | Premium Furniture for Modern Spaces</title>
+  <meta name="description" content="Maison Forme crafts premium furniture for interior designers, hotels, offices, and high-end residential spaces. Timeless design meets luxury craftsmanship.">
+  <meta name="keywords" content="premium furniture, luxury furniture, interior design, hotel furniture, office furniture, custom furniture">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Maison Forme Home">
+        <div class="logo-emblem">M</div>
+        <div class="logo-wordmark">Maison<em>Forme</em></div>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-cta nav-cta" id="navCtaBtn">Request Catalog</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+        <span class="ham-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-label="Mobile navigation">
+    <div class="drawer-inner">
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">&#x2715;</button>
+      <ul role="list">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-cta">Request Catalog</a>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <!-- HERO - CANVAS SCROLL ANIMATION -->
+  <section id="hero" class="hero-section" aria-label="Hero section">
+    <div class="hero-sticky" id="heroSticky">
+      <canvas id="heroCanvas" class="hero-canvas" role="img" aria-label="Furniture showcase animation"></canvas>
+      <div class="hero-overlay">
+        <div class="hero-content" id="heroContent">
+          <p class="hero-eyebrow" id="heroEyebrow">Premium Furniture Collection</p>
+          <h1 class="hero-headline" id="heroHeadline">Crafted Furniture<br><em>for Modern Spaces</em></h1>
+          <p class="hero-sub" id="heroSub">Timeless craftsmanship &amp; enduring beauty,<br>designed for the discerning professional.</p>
+          <a href="#contact" class="btn-cta hero-cta-btn" id="heroCta">Request Catalog</a>
+        </div>
+      </div>
+      <div class="scroll-hint" id="scrollHint" aria-hidden="true">
+        <span class="scroll-hint-text">Scroll to explore</span>
+        <div class="scroll-hint-arrow">
+          <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
+            <rect x="6" y="0" width="4" height="4" rx="2" fill="currentColor" opacity="0.4"/>
+            <path d="M8 6 L8 20 M3 15 L8 20 L13 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 1 - FEATURED PRODUCTS -->
+  <section id="products" class="section products-section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <p class="section-eyebrow">Our Collection</p>
+        <h2>Featured <em>Pieces</em></h2>
+        <p class="section-sub">Curated for professionals who demand excellence in every detail.</p>
+      </div>
+      <div class="products-grid">
+        <article class="product-card" data-animate="fade-up" data-delay="0">
+          <div class="product-img-wrap">
+            <img src="public/images/sofa.jpg" alt="Aria Linen Sofa" loading="lazy">
+            <div class="product-badge">New Arrival</div>
+            <div class="product-overlay"><a href="#contact" class="product-overlay-btn">View Details</a></div>
+          </div>
+          <div class="product-info">
+            <p class="product-cat">Living Room</p>
+            <h3 class="product-name">Aria Linen Sofa</h3>
+            <p class="product-desc">Hand-stitched Belgian linen with solid beech wood legs.</p>
+            <a href="#contact" class="btn-outline">Get Quote</a>
+          </div>
+        </article>
+        <article class="product-card" data-animate="fade-up" data-delay="100">
+          <div class="product-img-wrap">
+            <img src="public/images/dining_table.jpg" alt="Marbre Dining Table" loading="lazy">
+            <div class="product-overlay"><a href="#contact" class="product-overlay-btn">View Details</a></div>
+          </div>
+          <div class="product-info">
+            <p class="product-cat">Dining</p>
+            <h3 class="product-name">Marbre Dining Table</h3>
+            <p class="product-desc">Solid walnut base with Carrara marble surface. Seats 8.</p>
+            <a href="#contact" class="btn-outline">Get Quote</a>
+          </div>
+        </article>
+        <article class="product-card" data-animate="fade-up" data-delay="200">
+          <div class="product-img-wrap">
+            <img src="public/images/chair.jpg" alt="Boucle Accent Chair" loading="lazy">
+            <div class="product-overlay"><a href="#contact" class="product-overlay-btn">View Details</a></div>
+          </div>
+          <div class="product-info">
+            <p class="product-cat">Seating</p>
+            <h3 class="product-name">Boucle Accent Chair</h3>
+            <p class="product-desc">Premium boucle fabric, ergonomic form, solid oak base.</p>
+            <a href="#contact" class="btn-outline">Get Quote</a>
+          </div>
+        </article>
+        <article class="product-card" data-animate="fade-up" data-delay="300">
+          <div class="product-img-wrap">
+            <img src="public/images/wardrobe.jpg" alt="Cendre Wardrobe" loading="lazy">
+            <div class="product-overlay"><a href="#contact" class="product-overlay-btn">View Details</a></div>
+          </div>
+          <div class="product-info">
+            <p class="product-cat">Storage</p>
+            <h3 class="product-name">Cendre Wardrobe</h3>
+            <p class="product-desc">Ash wood finish with matte gold handles. Custom sizing available.</p>
+            <a href="#contact" class="btn-outline">Get Quote</a>
+          </div>
+        </article>
+      </div>
+      <div class="section-footer-cta" data-animate="fade-up">
+        <a href="#contact" class="btn-primary">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 - BED PROMO -->
+  <section id="about" class="section promo-section">
+    <div class="promo-inner">
+      <div class="promo-image-col">
+        <div class="promo-image-frame" data-animate="fade-left">
+          <div class="promo-image-bg" id="promoBg" style="background-image: url('public/images/bed.jpg')"></div>
+          <div class="promo-image-accent"></div>
+        </div>
+      </div>
+      <div class="promo-content-col" data-animate="fade-right">
+        <p class="section-eyebrow">Sleep Collection</p>
+        <h2>Designed for Comfort.<br><em>Built for Luxury.</em></h2>
+        <p class="promo-desc">Each bed is crafted to hotel standards — from the reinforced structural frame to the hand-tufted headboard. We supply to 5-star properties and luxury residential projects across the region.</p>
+        <ul class="promo-features">
+          <li><div class="feature-dot"></div><span>Custom sizing &amp; upholstery options</span></li>
+          <li><div class="feature-dot"></div><span>Contract-grade durability for hospitality</span></li>
+          <li><div class="feature-dot"></div><span>10-year structural warranty</span></li>
+          <li><div class="feature-dot"></div><span>White-glove delivery &amp; installation</span></li>
+        </ul>
+        <a href="#contact" class="btn-cta">Request Catalog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 - CATEGORIES -->
+  <section id="categories" class="section categories-section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <p class="section-eyebrow">Explore</p>
+        <h2>Shop by <em>Category</em></h2>
+      </div>
+      <div class="categories-grid">
+        <a href="#contact" class="cat-card" data-animate="fade-up" data-delay="0">
+          <div class="cat-visual" style="background: url('public/images/bed.jpg') center/cover no-repeat;">
+          </div>
+          <div class="cat-info"><h3>Beds</h3><p>Hotel &amp; residential</p><span class="cat-arrow">&#8594;</span></div>
+        </a>
+        <a href="#contact" class="cat-card" data-animate="fade-up" data-delay="80">
+          <div class="cat-visual" style="background: url('public/images/sofa.jpg') center/cover no-repeat;">
+          </div>
+          <div class="cat-info"><h3>Chairs &amp; Sofas</h3><p>Office &amp; lounge</p><span class="cat-arrow">&#8594;</span></div>
+        </a>
+        <a href="#contact" class="cat-card" data-animate="fade-up" data-delay="160">
+          <div class="cat-visual" style="background: url('public/images/wardrobe.jpg') center/cover no-repeat;">
+          </div>
+          <div class="cat-info"><h3>Wardrobes</h3><p>Built-in &amp; freestanding</p><span class="cat-arrow">&#8594;</span></div>
+        </a>
+        <a href="#contact" class="cat-card" data-animate="fade-up" data-delay="240">
+          <div class="cat-visual" style="background: url('public/images/dining_table.jpg') center/cover no-repeat;">
+          </div>
+          <div class="cat-info"><h3>Tables</h3><p>Dining &amp; coffee</p><span class="cat-arrow">&#8594;</span></div>
+        </a>
+        <a href="#contact" class="cat-card" data-animate="fade-up" data-delay="320">
+          <div class="cat-visual" style="background: url('public/images/chair.jpg') center/cover no-repeat;">
+          </div>
+          <div class="cat-info"><h3>Stools</h3><p>Bar &amp; accent</p><span class="cat-arrow">&#8594;</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust-bar" aria-label="Statistics">
+    <div class="container">
+      <div class="trust-inner">
+        <div class="trust-stat" data-animate="fade-up" data-delay="0">
+          <div class="trust-num-wrap"><span class="trust-number" data-target="200">0</span><span class="trust-suffix">+</span></div>
+          <p>Clients Served</p>
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-stat" data-animate="fade-up" data-delay="100">
+          <div class="trust-num-wrap"><span class="trust-number" data-target="12">0</span><span class="trust-suffix">+</span></div>
+          <p>Years of Craft</p>
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-stat" data-animate="fade-up" data-delay="200">
+          <div class="trust-num-wrap"><span class="trust-number" data-target="50">0</span><span class="trust-suffix">+</span></div>
+          <p>Hotel Partners</p>
+        </div>
+        <div class="trust-sep"></div>
+        <div class="trust-stat" data-animate="fade-up" data-delay="300">
+          <div class="trust-num-wrap"><span class="trust-number" data-target="98">0</span><span class="trust-suffix">%</span></div>
+          <p>Client Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 - TESTIMONIALS -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <p class="section-eyebrow">What Our Clients Say</p>
+        <h2>Trusted by <em>Professionals</em></h2>
+      </div>
+      <div class="testimonials-wrap" data-animate="fade-up">
+        <div class="testimonials-viewport" id="testimonialsViewport">
+          <div class="testimonials-track" id="testimonialsTrack">
+            <div class="testimonial-card">
+              <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote class="t-quote">"Maison Forme transformed our boutique hotel project entirely. The quality exceeds 5-star standards, and their team handled custom sizing without any compromise on design."</blockquote>
+              <div class="t-author">
+                <div class="t-customer-logo">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16M9 21v-4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v4"/></svg>
+                </div>
+                <div class="t-author-info">
+                  <strong>Atelier Studio</strong>
+                  <span>Boutique Hotel Project</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote class="t-quote">"We outfitted our entire executive floor with Maison Forme pieces. The craftsmanship is immediately evident — our guests comment on the ambiance constantly."</blockquote>
+              <div class="t-author">
+                <div class="t-customer-logo">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><path d="M9 9h6v6H9z"/></svg>
+                </div>
+                <div class="t-author-info">
+                  <strong>Grand Meridian Hotel</strong>
+                  <span>Executive Floor</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <blockquote class="t-quote">"As an architect on luxury residential projects, I have very high standards. Maison Forme is the only supplier I trust for statement pieces that last decades."</blockquote>
+              <div class="t-author">
+                <div class="t-customer-logo">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 22h20L12 2z"/></svg>
+                </div>
+                <div class="t-author-info">
+                  <strong>LPD Architecture</strong>
+                  <span>Luxury Residential</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials-controls">
+          <button class="t-btn t-prev" id="tPrev" aria-label="Previous testimonial">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M13 4 L7 10 L13 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="t-dots">
+            <button class="t-dot active" data-index="0" aria-label="Testimonial 1"></button>
+            <button class="t-dot" data-index="1" aria-label="Testimonial 2"></button>
+            <button class="t-dot" data-index="2" aria-label="Testimonial 3"></button>
+          </div>
+          <button class="t-btn t-next" id="tNext" aria-label="Next testimonial">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7 4 L13 10 L7 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo footer-logo">
+            <div class="logo-emblem">M</div>
+            <div class="logo-wordmark">Maison<em>Forme</em></div>
+          </a>
+          <p class="footer-tagline">Crafting premium furniture for professionals who refuse to compromise on quality and lasting beauty.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.181-.78 1.172-4.97 1.172-4.97s-.3-.598-.3-1.482c0-1.388.807-2.428 1.809-2.428.852 0 1.264.64 1.264 1.408 0 .858-.546 2.14-.828 3.33-.236.995.499 1.806 1.476 1.806 1.772 0 3.132-1.867 3.132-4.562 0-2.387-1.716-4.055-4.165-4.055-2.837 0-4.502 2.128-4.502 4.327 0 .856.33 1.773.741 2.276.069.086.079.162.058.25-.075.313-.244.994-.277 1.133-.044.183-.145.222-.334.134-1.249-.582-2.03-2.408-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.966-.527-2.292-1.148l-.623 2.378c-.226.868-.835 1.958-1.244 2.62.937.29 1.931.447 2.962.447 5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="#categories">Beds &amp; Bedrooms</a></li>
+            <li><a href="#categories">Living Room</a></li>
+            <li><a href="#categories">Dining</a></li>
+            <li><a href="#categories">Office</a></li>
+            <li><a href="#categories">Hotel Contract</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact-col">
+          <h4>Contact Us</h4>
+          <div class="contact-list">
+            <div class="contact-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>123 Design District, Dubai, UAE</span>
+            </div>
+            <div class="contact-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.5a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+97141234567">+971 4 123 4567</a>
+            </div>
+            <div class="contact-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:hello@maisonforme.com">hello@maisonforme.com</a>
+            </div>
+          </div>
+          <a href="#contact" class="btn-cta footer-cta-btn">Get a Quote</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Maison Forme. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
